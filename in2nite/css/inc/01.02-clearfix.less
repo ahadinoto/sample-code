@@ -1,0 +1,54 @@
+/*  1.2 Clearfix
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+.clearfix:after,
+
+/* Header */
+#header .inner:after,
+#navigation:after,
+#navigation ul:after,
+#tools-nav:after,
+#tools-nav ul:after,
+
+/* Promotions */
+.promo-partner header:after,
+
+/* Footer */
+#footer .teaser .inner:after,
+#footer .teaser .ft-main:after,
+#footer .teaser .ft-secondary:after,
+#footer .info .inner:after,
+
+#register-form:after {
+  content: ".";
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+}
+
+.ie7 {
+	.clearfix,
+
+	/* Header */
+	#header .inner,
+	#navigation,
+	#navigation ul,
+	#tools-nav,
+	#tools-nav ul,
+
+	/* Promotions */
+	.promo-partner header,
+
+	/* Footer */
+	#footer .teaser.inner,
+	#footer .teaser .ft-main,
+	#footer .teaser .ft-secondary,
+	#footer .info .inner,
+
+	#register-form {
+	  zoom: 1;
+	}
+}
+

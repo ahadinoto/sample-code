@@ -1,0 +1,300 @@
+/*  4.1 Common
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+@media only screen and (min-width: 400px) {
+
+	/* Footer */
+	#footer {
+		.ft-main h3,
+    	.ft-main p,
+    	.ft-secondary h4,
+    	.ft-secondary .social,
+		.info h4,
+		.info li,
+    	.fi-footer-nav,
+    	.copyright {
+    		margin: 0;
+    		text-align: left;
+    	}
+	}
+	.fi-destinations {
+		text-align: left;
+        li {
+        	display: block;
+            float: left;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 480px) {
+
+	/* Layout */
+	.inner {
+		margin: 0 3%;
+	}
+
+	/* Header */
+	#navigation {
+		ul{
+			margin-bottom: 2%;
+		}
+		li {
+			margin: 0 0 2% 0;
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+
+	#tools-nav {
+		margin-top: 8%;
+		ul {
+			margin-top: 1%;
+		}
+	}
+
+	/* Footer */
+    #footer {
+		section,
+	    .fi-footer-nav {
+	        float: left;
+	        width: 50%;
+	    }
+	    .fi-destinations {
+	    	padding-top: 0;
+	    }
+	}
+	.ft-main {
+	    h3,
+	    p {
+	        float: left;
+	    }
+	    p {
+        	padding: 0 0 0 35px;
+        	line-height: 78px;
+	  	}
+	}
+	.ft-secondary {
+		h4,
+	    .social {
+	        float: left;
+	        text-align: left;
+	    }
+	    h4 {
+	    	padding-bottom: 0;
+        	line-height: 78px;
+	    }
+	    .social {
+	    	li {
+	    		padding-top: 18px;
+	    		padding-bottom: 18px;
+	    	}
+	    }
+	}
+}
+
+
+@media only screen and (min-width: 640px) {
+
+	/* Header */
+	#navigation {
+		li {
+			margin: 0 0 2% 2%;
+			&:first-child {
+				margin-left: 0;
+			}
+			a {
+				background-position: 19px 19px;
+			}
+		}
+		#mn-user {
+			width: 46%;
+			a {
+				padding-left: 55px;
+			}
+		}
+		#mn-hotels {
+			width: 28%;
+		}
+		#mn-faq {
+			width: 22%;
+		}
+		#mn-hotels a,
+		#mn-faq a {
+			text-align: center;
+		}
+		#mn-hotels {
+			span {
+				padding-left: 50px;
+				background-position: 0 1px;
+			}
+		}
+		#mn-faq {
+			span{
+				padding-left: 45px;
+				background-position: 1px 2px;
+			}
+		}
+	}
+	#tools-nav {
+		top: 166px;
+		margin-top: 4%;
+		ul {
+			margin: 0;
+		}
+		li {
+			width: 32%;
+			margin: 2% 0 0 2%;
+		}
+		a {
+			padding: 10px 20px 12px 20px;
+			background-position: 20px 10px;
+		}
+	}
+	#tn-invite  a{
+		padding-left: 56px;
+	}
+	#tn-lang a {
+		padding-left: 56px;
+	}
+	#tn-curr a {
+		padding-left: 58px;
+	}
+	.subnav {
+		a {
+			text-align: left !important;
+		}
+	}
+}
+
+
+@media only screen and (min-width: 720px) {
+
+	/* Header */
+	#header .logo {
+		margin: 0;
+	}
+	#navigation {
+		float: right;
+		clear: none;
+		ul {
+			float: left;
+			margin-bottom: 0;
+		}
+		#mn-user,
+		#mn-hotels,
+		#mn-faq {
+			width: auto;
+		}
+		li {
+			margin: 0;
+			a {
+				padding: 25px 20px;
+				border: none;
+				background-position: 20px 25px;
+				background-color: @bgblue;
+			}
+		}
+	}
+	#mn-user {
+		a {
+			padding-left: 55px;
+		}
+		span {
+			max-width: 140px;
+		}
+	}
+	#mn-hotels a,
+	#mn-faq a {
+		padding-left: 20px;
+		text-align: left;
+	}
+	#tools-nav {
+		top: 78px;
+		right: 0;
+		margin: 0;
+		width: auto;
+		ul {
+			float: left;
+			margin: 0;
+		}
+		li {
+			margin: 0;
+			width: auto;
+		}
+		a {
+			font-size: 13px;
+			border-right: 1px solid @navborder1;
+			border-left: 1px solid @navborder2;
+		}
+	}
+	#tn-invite  a{
+		border-left: none;
+	}
+	#tn-curr a {
+		border-right: none;
+	}
+}
+
+
+@media only screen and (min-width: 820px) {
+
+	/* Footer */
+	.ft-main,
+	.ft-secondary {
+		margin: 0;
+	}
+	.ft-main {
+		float: left;
+    	width: 455px;
+	}
+	.ft-secondary {
+		float: right;
+    	width: 264px;
+	}
+
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+	/* Layout */
+	.inner {
+	    margin: 0 auto;
+	    width: 960px;
+	}
+
+	/* Header */
+
+
+	/* Footer */
+	#footer {
+		.info {
+	        .inner {
+	            background: url(../images/bg-faux-footer-info.png) repeat-y 100% 0; 
+	        }
+	 	}
+    	section {
+        	margin: 0 25px;
+        	width: 200px;
+    	}
+    	.fi-footer-nav {
+	        margin: 0 10px 0 0;
+	        width: 185px;
+    	}
+    	.fi-destinations {
+        	width: 240px;
+        }
+	    .fi-call-us,
+	    .fi-toll-free {
+	        margin-top: 0;
+	        padding-top: 0;
+	        border-top: none;
+	    }
+	    .fi-call-us {
+	        clear: none;
+	    }
+    }
+}
+

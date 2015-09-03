@@ -1,0 +1,289 @@
+/*  2.1 Header
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+/* logo */
+#header .logo {
+	float: left;
+	margin: 10px 0;
+    width: 135px;
+    height: 78px;
+    font-size: 22px;
+    line-height: 78px;
+    color: @white;
+    span {
+	    background-image: url(../images/logo-head.png);    
+	}
+	a {
+        text-decoration: none;
+        color: @white;
+        &:hover {
+            color: @dbluehover;
+        }
+    }
+}
+
+/* navigation */
+#navigation {
+	display: block;
+	position: relative;
+	z-index: 2;
+	float: none;
+	clear: both;
+	ul {
+		float: none;
+		margin-bottom: 3%;
+	}
+	li {
+		position: relative;
+		float: left;
+		margin: 0 0 3% 0;
+		width: 100%;
+		&:hover,
+		&.hover {
+			z-index: 2;
+		}
+		&:hover > a,
+		&.hover > a {
+			background-color: @lbluehover;
+		}
+		&:hover .subnav,
+		&.hover .subnav {
+			display: block;
+		}
+		&:hover .subnav a,
+		&.hover .subnav a {
+			color: @dblue;
+			background: @white;
+		}
+		&:hover .subnav a:hover,
+		&.hover .subnav a:hover {
+			color: @white;
+			border-left-color: @dbluehover;
+			border-right-color: @dbluehover;
+			background: @dbluehover;
+		}
+	}
+	a {
+		display: block;
+		padding: 19px 19px;
+		border: 1px solid @lbluehover;
+		min-height: 28px;
+		font: bold 14px/2 @normal;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: @white;
+		outline: none;
+		background-repeat: no-repeat;
+		background-position: 28px 19px;
+		background-color: @bgblue;
+		&:hover {
+			background-color: @lbluehover;
+		}
+		.arrow {
+			display: block;
+			padding: 0 24px 0 0;
+			background: url(../images/ico-mn-arrow.png) no-repeat 100% 11px;
+		}
+	}
+	.subnav {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		margin: 0;
+		width: 100%;
+		li {
+			margin: 0;
+			width: 100%;
+			border: none;
+			border-bottom: 1px solid @greyborder;
+		}
+		a {
+			padding: 8px 20px !important;
+			border: none;
+			border-left: 1px solid @greyborder;
+			border-right: 1px solid @greyborder;
+			font: normal 12px/2.5 @normal;
+			text-align: center;
+			text-decoration: none;
+			color: @dblue;
+			background: @white;
+		}
+	}
+}
+
+#mn-user {
+	z-index: 1;
+	a {
+		padding-left: 74px;
+		background-image: url(../images/ico-mn-user.png);
+	}
+	span {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+
+#mn-hotels a,
+#mn-faq a {
+	text-align: left;
+	background-position: 0 0;
+}
+
+#mn-hotels span,
+#mn-faq span {
+	display: inline-block;
+	padding-left: 55px;
+	background-repeat: no-repeat;
+}
+
+#mn-hotels {
+	span {
+		background-position: 0 0;
+		background-image: url(../images/ico-mn-hotels.png);
+	}
+}
+
+#mn-faq {
+	span{
+		background-position: 5px 2px;
+		background-image: url(../images/ico-mn-faq.png);
+	}
+}
+
+
+/* tools navigation */
+#tools-nav {
+	position: absolute;
+	top: 302px;
+	margin-top: 12%;
+	width: 100%;
+    ul {
+		margin-top: 2%;
+    }
+    li {
+    	position: relative;
+		float: left;
+		width: 100%;
+		margin: 2% 0 0 0;
+		&:first-child {
+			margin-left: 0;
+		}
+		&:hover,
+		&.hover {
+			z-index: 2;
+		}
+		&:hover > a,
+		&.hover > a {
+			background-color: @dbluehover;
+		}
+		&:hover .subnav,
+		&.hover .subnav {
+			display: block;
+		}
+
+		&:hover .subnav a,
+		&.hover .subnav a {
+			color: @dblue;
+			background: @white;
+		}
+		&:hover .subnav a:hover,
+		&.hover .subnav a:hover {
+			color: @white;
+			background: @lblue;
+		}
+
+    }
+    a {
+    	display: block;
+		padding: 15px 20px;
+		min-height: 20px;
+		font: normal 11px/20px @normal;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: @white;
+		outline: none;
+		background-repeat: no-repeat;
+		background-position: 28px 15px;
+		background-color: @lblue;
+		&:hover{
+			background-color: @dbluehover;
+		}
+		.arrow {
+			display: block;
+			padding: 0 24px 0 0;
+			background: url(../images/ico-mn-arrow.png) no-repeat 100% 7px;
+		}
+    }
+    .subnav {
+		display: none;		
+		position: absolute;
+		top: 100%;
+		left: 0;
+		margin: 0;
+		width: 100%;
+		border-right: 1px solid @greyborder;
+		li {
+			margin: 0;
+			width: 100%;
+			border: none;
+		}
+		a {
+			padding: 5px 20px 5px 19px !important;
+			border: none;
+			border-left: 1px solid @greyborder;
+			border-bottom: 1px solid @greyborder;
+			font: normal 11px/30px @normal;
+			text-align: center;
+			text-decoration: none;
+			color: @dblue;
+			background: @white;
+            strong {
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: none;
+            }
+		}
+	}
+	#tn-lang .arrow,
+	#tn-lang a {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	#tn-curr .subnav {
+		li {
+			width: 50%;
+		}
+		a {
+			padding: 5px 10px !important;
+			text-align: center !important;
+		}
+	}
+}
+
+#tn-invite a,
+#tn-lang a,
+#tn-curr a {
+	padding-left: 75px;
+}
+
+#tn-invite {
+	a {
+		background-image: url(../images/ico-tn-invite.png);
+	}
+}
+
+#tn-lang {
+	a {
+		background-image: url(../images/ico-tn-lang.png);
+	}
+}
+
+#tn-curr {
+	a {
+		background-image: url(../images/ico-tn-curr.png);
+	}
+}
+
